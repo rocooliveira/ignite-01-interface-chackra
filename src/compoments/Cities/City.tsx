@@ -10,7 +10,7 @@ interface CityProps{
 
 export default function City({ city, country, image, flag }: CityProps) {
   return (
-    <GridItem h={60} key={city}>
+    <GridItem h={60}>
       <Image src={image} h='173px' w='full' objectFit='cover' borderTopRadius={5} />
       <Flex
         direction='row'

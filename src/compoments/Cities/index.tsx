@@ -1,7 +1,7 @@
 
 import {Grid} from "@chakra-ui/react";
 import { ContinentProps } from "../../pages/continente/[slug]";
-import City from "./city";
+import City from "./City";
 
 export default function Cities({ continent }: ContinentProps) {
   return (
@@ -11,7 +11,7 @@ export default function Cities({ continent }: ContinentProps) {
       alignItems='center'
     >
       { continent.cities_list.map(item => (
-        <City city={item.city} country={item.country} flag={item.flag} image={item.thumb} />
+        <City key={item.city} city={item.city} country={item.country} flag={item.flag} image={item.thumb} />
       ))}
 
     </Grid>
